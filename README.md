@@ -8,7 +8,7 @@
 
 ## PENDIENTE
 
-- Cambiar tecnología de Spreadsheet + PHP + Hosting Normal a PUG + Github
+- Cambiar tecnología de PHP + Hosting Normal a PUG + Github
 - Redirigir el dominio a Github
 - Comprobar redirecciones
 

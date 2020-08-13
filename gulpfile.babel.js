@@ -100,7 +100,7 @@ gulp.task('img', () => {
 
 gulp.task('rest', () => {
   return (
-    gulp.src(['src/*.*', 'src/.*']).pipe(gulp.dest('docs')),
+    gulp.src(['src/*.*', 'src/.*', 'src/*']).pipe(gulp.dest('docs')),
     gulp.src('src/fuentes/*.*').pipe(gulp.dest('docs/fuentes'))
   )
 })
