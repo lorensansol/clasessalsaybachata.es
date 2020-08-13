@@ -1,0 +1,59 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Clases de Baile 【 Salsa y Bachata 】 en Centro Zig-Zag Murcia', metaDescription = 'En Copacabana, en Centro Zig-Zag Murcia, ofrecemos clases de salsa en línea y bachata ✅ (y otros bailes latinos) y también clases específicas de salsa cubana.', body = 'clases'
+
+block content
+  .principal
+    h1 Clases de Baile Salsa y Bachata en Centro Zig-Zag Murcia
+    p Clases de baile de Salsa en Línea y Bachata o de Salsa Cubana en Copacabana, Centro Zig-Zag Murcia.
+    ul
+      li
+        span.color Nivel Inicio 0
+        | : Lunes de 20:00 a 22:00 (2 horas).
+      li
+        span.color Nivel Inicio 1
+        | : Lunes de 22:00 a 00:00 (2 horas).
+      li
+        span.color Nivel Medio
+        | : Martes de 20:00 a 22:00 (2 horas).
+      li
+        span.color Nivel Medio-Alto
+        | : Martes de 22:00 a 00:00 (2 horas).
+      li
+        span.color Nivel Medio
+        | : Viernes de 20:00 a 22:00 (2 horas).
+      li
+        span.color Salsa Cubana
+        | : Sábados de 22:00 a 23:30 (1,5 horas).
+    .globos
+      div
+        a.globo.logo-copacabana(title='Ampliar Logo Copacabana Zig-Zag Murcia' href='/img/logo-copacabana.jpg' target='_blank')
+          span Logo
+      div
+        a.globo.exterior-copacabana(title='Ampliar Exterior Copacabana Zig-Zag Murcia' href='/img/exterior-copacabana.jpg' target='_blank')
+          span Exterior
+      div
+        a.globo.interior-copacabana(title='Ampliar Interior Copacabana Zig-Zag Murcia' href='/img/interior-copacabana.jpg' target='_blank')
+          span Interior
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    include ../includes/clases.pug
+    p(itemscope itemtype='http://schema.org/LocalBusiness')
+      | También puedes ampliar el
+      a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Copacabana Centro Zig-Zag Murcia' itemprop='hasMap' href='https://maps.google.com/maps?ll=37.998698,-1.141464&z=16&t=m&hl=es-ES&gl=ES&mapclient=embed&cid=13438434014906965942' rel='nofollow' target='_blank') mapa
+      |  de
+      strong(itemprop='name') Copacabana Zig-Zag
+      | :
+      span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+        span(itemprop='streetAddress') Juan Carlos I 19
+        | , Centro de Ocio Zig Zag /
+        span(itemprop='postalCode') 30008
+        span(itemprop='addressLocality')
+          span(itemprop='addressRegion') Murcia
+      | .
+      span(itemprop='geo' itemscope itemtype='http://schema.org/GeoCoordinates')
+        meta(itemprop='latitude' content='37.998358')
+        meta(itemprop='longitude' content='-1.138739')
+  .capa-anti-eventos(onclick='style.display=\'none\'')
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.0901356933296!2d-1.1387389999999997!3d37.998357999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63818bc10ba841%3A0xba7ee889640e5fb6!2sCopacabana+Zig+Zag!5e0!3m2!1ses!2ses!4v1441209379337' width='100%' height='350' allowfullscreen)
+  include ../includes/locales.pug

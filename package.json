@@ -1,0 +1,32 @@
+{
+  "name": "clasessalsaybachata.es",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "autoprefixer": "^9.8.5",
+    "browser-sync": "^2.26.10",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-purgecss": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {},
+  "description": "## HORAS",
+  "directories": {
+    "doc": "docs"
+  }
+}

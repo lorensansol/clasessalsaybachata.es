@@ -1,0 +1,141 @@
+extends ../template/layout.pug
+
+block var
+  - const title= 'Música Salsa y Bachata', metaDescription = 'Te dejamos algunas canciones de Salsa, Chachachá y Bachata para que practiques lo que has aprendido con nuestras clases de baile de salsa y bachata.', body = 'musica'
+
+block content
+  style(type='text/css').
+    #playlist,#player{max-width:400px;padding:20px;margin:0 auto;display:block;text-align:center}
+    #player{background:linear-gradient(to bottom, #424242 50%, #222 50%);padding:10px 20px;border-top-left-radius:10px;border-top-right-radius:10px}
+    audio{width:100%;margin:0 auto;display:inline-block;background-color:#000;border-radius:5px}
+    #playlist{margin:0 auto 20px auto;display:block;background:#424242;border-top:5px solid #EE82EE;border-bottom-left-radius:10px;border-bottom-right-radius:10px;text-align:left;font-size:12px;font-family:'Trebuchet MS', Trebuchet, Verdana, sans-serif;font-weight:normal}
+    #playlist li, #playlist ul li{background-image:none;list-style-type:none;padding:0;margin:0}
+    #playlist li a{color:#CCC;background:#222;padding:7px 5px;display:block;padding-left:10px;text-decoration:none}
+    #playlist li a:hover{background:#EE82EE;text-decoration:none}
+    #playlist .active a{color:#EE82EE;font-style:italic;text-decoration:none}
+    #playlist .active a:before{content:"\25B6";color:#CCC;font-style:normal;padding-right:8px}
+    #playlist .active a:hover{color:#222}
+  .principal
+    h1 Música Salsa y Bachata
+    p Te dejamos algunas canciones de Salsa, Chachachá y Bachata para que practiques lo que has aprendido con nuestras clases de baile de salsa y bachata y/o ¡simplemente para que disfrutes como a ti te plazca!
+    img.cabecera-fondo(width='600' height='338' alt='Música Salsa y Bachata' src='/img/cabecera-musica-salsa-bachata.jpg')
+    #player
+      audio#audio(controls preload='auto' tabindex='0' type='audio/mpeg')
+        source(src='http://www.goear.com/action/sound/get/0004643' type='audio/mp3')
+        |  Tu navegador no está actualizado y no puede mostrar este reproductor de audio.
+    ul#playlist
+      li: a(href='http://www.goear.com/action/sound/get/0004643' rel='nofollow') Salsa - Alfredito Linares - Ain't No Sunshine
+      li: a(href='http://cs4406v4.vk.me/u392292/audios/75180822e082.mp3?extra=bv_Aq_psjsAYx9WN88tFcpv8Hhr5ZqPrr6ZL1LhclNOw5lS6vvwPa6ZU1U3CJB9sZz_pcIyMdCm4Q3A6wlPt9gbi1vxr' rel='nofollow') Salsa - Angel Canales - Saraguey Santoja
+      li: a(href='http://www.goear.com/action/sound/get/d34393c' rel='nofollow') Salsa - Bobby Valentin - La Boda De Ella
+      li: a(href='http://www.goear.com/action/sound/get/f5fcfe6' rel='nofollow') Salsa - Boogaloo Assassins - No No No
+      li: a(href='http://d.mimp3.me/d/418392561_8054282/charanga-de-la-4-buchipluma-na-ma.mp3' rel='nofollow') Salsa - Charanga De La 4 - Buchipluma Na' Ma'
+      li: a(href='http://www.goear.com/action/sound/get/c531fa6' rel='nofollow') Salsa - Charanga de la cuatro - Aquí hay un Hombre Gozando
+      li: a(href='http://www.goear.com/action/sound/get/b6ac904' rel='nofollow') Salsa - Edwin Rivera - Beautiful
+      li: a(href='http://www.goear.com/action/sound/get/be303a9' rel='nofollow') Salsa - Fredyclan - Yo vengo de Cuba
+      li: a(href='http://jinbox.info/xLoad/Q2FtaW5hK3krUHJlbmRhK0VsK0ZvZ29uKy0rRnJ1a28reStTdXMrVGVzb3MrJTVCSFElNUQ=.mp3' rel='nofollow') Salsa - Fruko y Sus Tesos - Camina y Prende El Fogón
+      li: a(href='http://www.goear.com/action/sound/get/ed21e63' rel='nofollow') Salsa - Grupo Latin Vibe - La Llave
+      li: a(href='http://www.goear.com/action/sound/get/2156f2b' rel='nofollow') Salsa - Hector Lavoe - Juanito Alimaña
+      li: a(href='http://www.goear.com/action/sound/get/949bebd' rel='nofollow') Salsa - Ismael Rivera - El Nazareno
+      li: a(href='http://c.mimp3.me/d/1UDNxkTOxUTM/ismael-rivera-que-te-pasa-a-ti.mp3' rel='nofollow') Salsa - Ismael Rivera - Que Te Pasa A Ti
+      li: a(href='http://www.goear.com/action/sound/get/34c4249' rel='nofollow') Salsa - La Maxima 79 - Pobrecita
+      li: a(href='http://www.goear.com/action/sound/get/27e1de6' rel='nofollow') Salsa - La Maxima 79 - Singapore Vibes
+      li: a(href='http://mimp3.me/escuchar/36KjbKKbpKFqoMijomyhmaaka5o/la-maxima-79-la-gripe-2015-salsa' rel='nofollow') Salsa - La Máxima 79 - La Gripe
+      li: a(href='http://www.goear.com/action/sound/get/62447dc' rel='nofollow') Salsa - La Sucursal S.A. - Caigo
+      li: a(href='http://www.goear.com/action/sound/get/d1778da' rel='nofollow') Salsa - Marc Anthony - Flor Pálida
+      li: a(href='http://www.goear.com/action/sound/get/3bd58f8' rel='nofollow') Salsa - Marlon - No me Mereces
+      li: a(href='http://www.goear.com/action/sound/get/4a2e599' rel='nofollow') Salsa - Miguel Enriquez - Abre que voy
+      li: a(href='http://www.goear.com/action/sound/get/a55cc91' rel='nofollow') Salsa - Nicky Jam - Hola Bebe (Version Salsa)
+      li: a(href='http://d.mimp3.me/d/859905442_292293/orquesta-bronco-nango.mp3' rel='nofollow') Salsa - Orquesta Bronco - Ñango
+      li: a(href='http://www.goear.com/action/sound/get/62a48fb' rel='nofollow') Salsa - Orquesta La Muralla - Avísale
+      li: a(href='http://c.mimp3.me/d/IDMygDOygzM/la-mafia-orquesta-narvaez.mp3' rel='nofollow') Salsa - Orquesta Narvaez - La Mafia
+      li: a(href='http://www.goear.com/action/sound/get/626651f' rel='nofollow') Salsa - Orquesta Tipica Ideal - Vamonos pa Senegal
+      li: a(href='http://d.mimp3.me/d/76713707_46358541-/oscar-d-de-leon-lloraras.mp3' rel='nofollow') Salsa - Oscar D'León - Lloraras
+      li: a(href='http://cs536307v4.vk.me/u26254615/audios/604bc667b162.mp3' rel='nofollow') Salsa - Oscar D´leon - Para Chango
+      li: a(href='http://d.mimp3.me/d/242351062_257730601/oscar-de-leon-feat-vico-c-lloraras.mp3' rel='nofollow') Salsa - Oscar De Leon Feat. Vico C - Llorarás
+      li: a(href='http://www.goear.com/action/sound/get/e90d06b' rel='nofollow') Salsa - Roberta Roena - Que Se Sepa
+      li: a(href='http://www.goear.com/action/sound/get/700f55c' rel='nofollow') Salsa - Roberto Roena - Avísale a mi Contrario
+      li: a(href='http://www.goear.com/action/sound/get/cb5a8b3' rel='nofollow') Salsa - Sonora Matancera - Mala Mujer
+      li: a(href='http://www.goear.com/action/sound/get/7bc03bc' rel='nofollow') Salsa - Tromboranga - Humildad
+      li: a(href='http://www.goear.com/action/sound/get/1cc3ea9' rel='nofollow') Salsa - Tromboranga - Palo pa' la campana
+      li: a(href='http://www.goear.com/action/sound/get/496728b' rel='nofollow') Salsa - Wayne Gorbea - El Yo Yo
+      li: a(href='http://www.goear.com/action/sound/get/408af16' rel='nofollow') Salsa - Wayne Gorbea - Estamo en Salsa
+      li: a(href='http://www.goear.com/action/sound/get/c5a7098' rel='nofollow') Salsa - Wayni Gorbea - DJ Sabroso
+      li: a(href='http://www.goear.com/action/sound/get/0896c65' rel='nofollow') Salsa - Willie Colon - Idilio
+      li: a(href='http://www.goear.com/action/sound/get/432044f' rel='nofollow') Salsa - Yoruba Son - Amarilla Se Pone
+      li: a(href='http://d.mimp3.me/d/559027322_6170413/chuito-amp-the-latin-uniques-yo-no-consigo-tu-amor.mp3' rel='nofollow') Chachacha - Chuito + The Latin Uniques - Yo no consigo tu amor
+      li: a(href='http://d.mimp3.me/d/332430412_87131645-/edwin-bonilla-cuenta-bien.mp3' rel='nofollow') Chachacha - Edwin Bonilla - Cuenta Bien
+      li: a(href='http://www.goear.com/action/sound/get/8a4ca1b' rel='nofollow') Chachacha - La Maxima 79 - Mi Chula
+      li: a(href='http://d.mimp3.me/d/903148291_86890074-/grupo-24-horas-por-favor-bachata-by.mp3' rel='nofollow') Bachata - 24 Horas - Por Favor
+      li: a(href='http://d.mimp3.me/d/067268391_86890074-/justin-bieber-as-long-as-you-love-me-bachata-by.mp3' rel='nofollow') Bachata - Carlos y Alejandra - La llamada
+      li: a(href='http://www.goear.com/action/sound/get/9e20c71' rel='nofollow') Bachata - Dama - Duele
+      li: a(href='http://www.goear.com/action/sound/get/772c03d' rel='nofollow') Bachata - Daniel Santacruz - Bachata en Nueva York
+      li: a(href='http://www.goear.com/action/sound/get/9c4218b' rel='nofollow') Bachata - Daniel Santacruz - Cuando Un Hombre Se Enamora
+      li: a(href='http://www.goear.com/action/sound/get/ae733d0' rel='nofollow') Bachata - Daniel Santacruz - Lo Dice La Gente
+      li: a(href='http://www.goear.com/action/sound/get/5c1dadc' rel='nofollow') Bachata - Daniel Santacruz - No Me Sueltes
+      li: a(href='http://songserver.info/api/sc_104571712.mp3' rel='nofollow') Bachata - Dawin - As Long As You Love Me (Cover Bachata)
+      li: a(href='http://d.mimp3.me/d/404649911_94667828/domenic-marte-y-yo-me-equivoco-bachata.mp3' rel='nofollow') Bachata - Domenic Marte - Yo Me Equivoco
+      li: a(href='http://www.goear.com/action/sound/get/0730364' rel='nofollow') Bachata - Jashel - La Copa Rota
+      li: a(href='http://d.mimp3.me/d/024148291_86890074-/jay-te-heroe-bachata-by.mp3' rel='nofollow') Bachata - Jay D.Amante - Héroe
+      li: a(href='http://c.mimp3.me/d/yEzM3IzM3UTM/joel-santos-al-diablo.mp3' rel='nofollow') Bachata - Joel Santos - Al Diablo
+      li: a(href='http://www.goear.com/action/sound/get/cca831d' rel='nofollow') Bachata - Joel Santos - Ayer Pedí
+      li: a(href='http://d.mimp3.me/d/196951383_5358310002/joel-santos-si-esta-casa-hablara-2015.mp3' rel='nofollow') Bachata - Joel Santos - Si Esta Casa Hablara
+      li: a(href='http://www.goear.com/action/sound/get/51d2e76' rel='nofollow') Bachata - Johnny Sky - With or Without You
+      li: a(href='http://www.goear.com/action/sound/get/6b13b78' rel='nofollow') Bachata - Juan Luis Guerra 440 - Tus Besos
+      li: a(href='http://d.mimp3.me/d/435191011_1968603/las-ovejas-negras-el-cuarto-vacio-bachata-version.mp3' rel='nofollow') Bachata - Las Ovejas Negras - El Cuarto Vacío
+      li: a(href='http://d.mimp3.me/d/378903712_0045447/leslie-grace-a-mi-manera.mp3' rel='nofollow') Bachata - Leslie Grace - A Mi Manera
+      li: a(href='http://www.goear.com/action/sound/get/7e13718' rel='nofollow') Bachata - Loisaidas - Ayer
+      li: a(href='http://www.goear.com/action/sound/get/2cddaa6' rel='nofollow') Bachata - Luis Fonsi, Juan Luis Guerra - Llegaste Tú
+      li: a(href='http://d.mimp3.me/d/466340123_828082512/mario-baro-la-la-la-bachata.mp3' rel='nofollow') Bachata - Mario Baro - la la la 'cover bachata'
+      li: a(href='http://www.goear.com/action/sound/get/b47bb21' rel='nofollow') Bachata - Milly Quezada - Lo que mas
+      li: a(href='http://www.goear.com/action/sound/get/772fe94' rel='nofollow') Bachata - Nicole Scherzinger - Hush, hush
+      li: a(href='http://www.goear.com/action/sound/get/10dd0e0' rel='nofollow') Bachata - Prince Royce - Te Me Vas
+      li: a(href='http://www.goear.com/action/sound/get/9ad949a' rel='nofollow') Bachata - Prince Royce - Te Regalo el Mar
+      li: a(href='http://www.goear.com/action/sound/get/7ceceba' rel='nofollow') Bachata - Prince Royce - Te Robaré
+      li: a(href='http://d.mimp3.me/d/756014462_43102161-/romeo-santos-7-dias.mp3' rel='nofollow') Bachata - Romeo Santos - 7 Días
+      li: a(href='http://www.goear.com/action/sound/get/0d2a8de' rel='nofollow') Bachata - Romeo Santos - Propuesta Indecente
+      li: a(href='http://c.mimp3.me/d/zgzMyAjM3MTM/tony-dize-ft-toby-love-solos.mp3' rel='nofollow') Bachata - Tony Dize + Toby Love - Solo
+      li: a(href='http://d.mimp3.me/d/132158843_923820232/yenddi-tu-sin-mi-bachata-urbana-2015-audio.mp3' rel='nofollow') Bachata - Yenddi - Tu Sin mi
+  .secundario
+    .globos
+      div
+        a.globo.contacto-inicio(title='Página de Inicio' href='/')
+          h3 Inicio
+        p
+          strong Clases de Salsa y Bachata en Murcia
+          | : Te enseñamos a bailar con la máxima calidad y profesionalidad.
+      div
+        a.globo.contacto-profesores(title='Profesores de Bailes Latinos: Manu y Gloria' href='/profesores-baile')
+          h3 Profesores Manu y Gloria
+        p
+          strong Manu y Gloria: Profesores de Baile de Salsa y Bachata
+          | . Entra si quieres saber más sobre nosotros.
+      div
+        a.globo.contacto-clases(title='Clases de Baile Salsa y Bachata en Murcia' href='/clases-baile-murcia')
+          h3 Clases de Baile
+        p
+          | Horarios y localizaciones de nuestras 
+          strong Clases de Baile de Salsa y Bachata en Murcia
+          |  y alrededores (
+          strong Elche, Alicante
+          | ...)
+      //- div
+        a.globo(title='Talleres de Baile Salsa y Bachata' href='/talleres-baile')
+          h3 Talleres
+        p Talleres de Baile de Salsa y Bachata que realizamos habitual y/o puntualmente en determinados locales.
+      //- div
+        a.globo(title='Música Salsa y Bachata' href='/musica')
+          h3 Música
+        p Lista de reproducción de Música de Salsa y Bachata que hemos preparado para ti.
+      //- div
+        a.globo(title='Comprar Zapatos de Baile en Murcia' href='/zapatos-baile')
+          h3 Zapatos
+        p Catálogo de Zapatos de Baile que ofrecemos si quieres comprar en Murcia.
+      //- div
+        a.globo(title='Contacto' href='/contacto')
+          h3 Contacto
+        p Contacta con nosotros mediante formulario de contacto, teléfono, whatsapp, página o perfil de facebook.
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript')
+  script.
+    //<![CDATA[
+    var audio;var playlist;var tracks;var current;initaudio();function initaudio(){current=0;audio=$('audio');playlist=$('#playlist');tracks=playlist.find('li a');len=tracks.length-1;audio[0].volume=1;playlist.find('a').click(function(e){e.preventDefault();link=$(this);current=link.parent().index();runaudio(link,audio[0])});audio[0].addEventListener('ended',function(e){current++;if(current>len){current=0;link=playlist.find('a')[0]}else{link=playlist.find('a')[current]}runaudio($(link),audio[0])})}function runaudio(link,player){player.src=link.attr('href');par=link.parent();par.addClass('active').siblings().removeClass('active');audio[0].load();audio[0].play()}
+    //]]>

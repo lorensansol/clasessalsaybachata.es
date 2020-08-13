@@ -1,0 +1,48 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Academia de Baile 【 Salsa y Bachata 】 en Murcia', metaDescription = 'En nuestra academia de bailes latinos ✅ en el gimnasio Aerodance en Murcia nos centramos en salsa y bachata, pero también contamos con otros estilos.', body = 'clases'
+
+block content
+  .principal
+    h1 Academia de Baile Salsa y Bachata en Murcia
+    p Si estás buscando clases de salsa y bachata en una academia de baile en Murcia, en el barrio de El Carmen encontrarás la academia de baile Aerodance. Allí damos clase a varios grupos con distintos niveles en los siguientes horarios:
+    ul
+      li
+        span.color Nivel Medio-Alto
+        | : Miércoles de 20:00 a 22:00 (2 horas).
+      li
+        span.color Nivel Inicio 0
+        | : Miércoles de 22:00 a 00:00 (2 horas).
+      li
+        span.color Nivel Medio
+        | : Sábados de 19:00 a 21:00 (2 horas).
+    .globos
+      div
+        a.globo.logo-aerodance(title='Ampliar Logo Academia de Baile Aerodance Murcia' href='/img/logo-aerodance.png' target='_blank')
+          span Logo
+      div
+        a.globo.exterior-aerodance(title='Ampliar Exterior Academia de Baile Aerodance Murcia' href='/img/exterior-aerodance.jpg' target='_blank')
+          span Exterior
+      div
+        a.globo.interior-aerodance(title='Ampliar Interior Academia de Baile Aerodance Murcia' href='/img/interior-aerodance.jpg' target='_blank')
+          span Interior
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    include ../includes/clases.pug
+    p(itemscope itemtype='http://schema.org/LocalBusiness')
+      | También puedes ampliar el 
+      a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Academia de Baile Aerodance Murcia' href='https://www.google.es/maps/place/aerodance/data=!4m2!3m1!1s0x0:0xa162d62abb03614c?sa=X&ved=0CDAQrwswAGoVChMImom-6v7lxwIVL1rbCh1zUwfh' rel='nofollow' target='_blank') mapa
+      |  de 
+      strong(itemprop='name') Aerodance
+      | : 
+      span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+        span(itemprop='streetAddress') Plaza Pintor Mariano Ballester, 4
+        |  / 
+        span(itemprop='postalCode') 30002
+        |  Barrio de El Carmen, 
+        span(itemprop='addressLocality')
+          span(itemprop='addressRegion') Murcia
+      | .
+  .capa-anti-eventos(onclick='style.display=\'none\'')
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.981202257338!2d-1.127235!3d37.977568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa162d62abb03614c!2sGimnasio+Femenino+AERODANCE!5e0!3m2!1ses!2ses!4v1441665634579' width='100%' height='350' allowfullscreen)
+  include ../includes/locales.pug

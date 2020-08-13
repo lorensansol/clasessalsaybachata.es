@@ -1,0 +1,5 @@
+RewriteEngine on
+## RewriteCond %{HTTP_HOST} ^localhost:8888$ [NC,OR]
+## RewriteCond %{HTTP_HOST} ^www.localhost:8888$
+RewriteCond %{REQUEST_URI} !docs/
+RewriteRule (.*) /docs/$1 [L]

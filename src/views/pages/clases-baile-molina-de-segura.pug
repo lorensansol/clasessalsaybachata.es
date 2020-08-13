@@ -1,0 +1,41 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Clases de Baile 【 Salsa y Bachata 】 en Molina de Segura', metaDescription = 'En el Centro Social San José de Molina de Segura (Murcia), ofrecemos clases de salsa en línea y bachata ✅ (y otros bailes latinos).', body = 'clases'
+
+block content
+  .principal
+    h1 Clases de Baile de Salsa y Bachata en Molina de Segura
+    p Clases de Baile de Salsa y Bachata en Centro Social San José de Molina de Segura, Murcia.
+    ul
+      li
+        span.color Nivel Inicio 0
+        | : Domingos de 19:00 a 20:30 (1,5 horas).
+      li
+        span.color Nivel Medio
+        | : Domingos de 20:30 a 22:30 (2 horas).
+    .globos
+      div: a.globo.logo-cssj(title='Ampliar Logo Centro Social San José de Molina de Segura, Murcia' href='/img/logo-cssj.png' target='_blank')
+          span "Logo"
+      div: a.globo.exterior-cssj(title='Ampliar Exterior Centro Social San José de Molina de Segura, Murcia' href='/img/exterior-cssj.jpg' target='_blank')
+          span Exterior
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    include ../includes/clases.pug
+    p(itemscope itemtype='http://schema.org/LocalBusiness')
+      | También puedes ampliar el 
+      a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Centro Social San José de Molina de Segura, Murcia' itemprop='hasMap' href='https://www.google.com/maps?ll=38.066013,-1.204099&z=18&t=m&hl=es-ES&gl=ES&mapclient=embed&q=Calle+Palaz%C3%B3n,+14+30500+Molina+de+Segura+Murcia' rel='nofollow' target='_blank') mapa
+      |  de 
+      strong(itemprop='name') Centro Social San José
+      | : 
+      span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+        span(itemprop='streetAddress') Calle Palazón s/n
+        |  / 
+        span(itemprop='postalCode') 30500
+        |  
+        span(itemprop='addressLocality') Molina de Segura
+        | , 
+        span(itemprop='addressRegion') Murcia
+      | .
+  .capa-anti-eventos(onclick='style.display=\'none\'')
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.2968864133101!2d-1.2040994000000178!3d38.06601320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63875043c05801%3A0xbfadf8542fae639e!2sCalle+Palaz%C3%B3n%2C+14%2C+30500+Molina%2C+Murcia!5e0!3m2!1ses!2ses!4v1441116449244' width='100%' height='350' allowfullscreen)
+  include ../includes/locales.pug

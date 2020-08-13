@@ -1,0 +1,15 @@
+extends ../template/layout.pug
+
+block var
+  - const title= 'Error 404: Página no encontrada 😅'
+
+block content
+  .principal
+    h1 ¡Página no encontrada! 😅
+    h2 (Error 404)
+    p La página a la que intentas acceder no está disponible (o almenos de momento).
+    p Puede ser porque hayas escrito la URL incorrectamente o porque hayas accedido mediante un enlace antiguo que haya sido eliminado.
+    p
+      | En cualquier caso, te sugerimos que vayas a la 
+      a(href="/") página de inicio
+      |  para navegar por nuestros contenidos 😄

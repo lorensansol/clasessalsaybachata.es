@@ -1,0 +1,19 @@
+block var
+doctype html
+html(lang='es')
+  head
+    block head
+      include head.pug
+  body(class=body)
+    block header
+      include header.pug
+    section
+      article
+        block content
+          .principal
+            h1 Clases de Salsa y Bachata
+            p Hola mundo
+    block footer
+      include footer.pug
+    block scripts
+      script(src="/js/scripts.js" defer)

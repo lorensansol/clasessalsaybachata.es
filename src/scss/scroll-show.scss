@@ -1,0 +1,8 @@
+[data-showup] {
+  transition: all 1s ease 0s, opacity 1.5s ease 0s;
+  transform-origin: center top;
+}
+.showup {
+  transform: translateY(50px);
+  opacity: 0;
+}

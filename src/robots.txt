@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /master/
+
+Sitemap: https://clasessalsaybachata.es/sitemap.xml

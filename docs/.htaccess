@@ -1,0 +1,53 @@
+# Activar redirecciones
+RewriteEngine On
+
+# Redireccionar de http a https
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteCond %{HTTP_HOST} ^clasessalsaybachata\.es$
+RewriteRule ^(.*)$ https://clasessalsaybachata.es/$1 [R=301,L,NE]
+
+# Redireccionar de www a sin
+RewriteCond %{HTTP_HOST} ^www.clasessalsaybachata.es [NC]
+RewriteRule ^(.*)$ https://clasessalsaybachata.es/$1 [L,R=301]
+
+# Quitar index.php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php\ HTTP/
+RewriteRule ^(([^/]+/)*)index\.php$ https://clasessalsaybachata.es/$1 [R=301,L]
+
+# Renombrar URLs a sin .php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Quitar extensión .html en las URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
+# Página de Error 404
+ErrorDocument 404 /404
+
+# Especificar caché de navegador en servidor
+<IfModule mod_expires.c>
+<filesmatch "\.(ico|pdf|flv|svg|jpg|jpeg|png|gif|mp4|JPG|JPEG|PNG|GIF|MP4|js|css|xml|txt|woff2|woff|ttf|eot)$">
+ExpiresActive on
+ExpiresDefault "access plus 30 day"
+</filesmatch>
+</IfModule>
+
+# Redirecciones 301
+Redirect 301	/index	/
+#RedirectMatch 301	(.*)\.php$	/
+Redirect 301	/manuygloriasalsaybachata.es	/
+Redirect 301	/m/	/
+Redirect 301	/talleres-baile	/
+Redirect 301	/manuygloriasalsabachata.es	/
+Redirect 301	/mobile/	/
+Redirect 301	/cursos-intensivos-baile	/
+Redirect 301	/clases-baile	/clases-baile-murcia
+Redirect 301	/clases-baile-centro-zig-zag-murcia	/clases-baile-copacabana-zig-zag-murcia
+Redirect 301	/clases-baile-copacabanas-zig-zag-murcia	/clases-baile-copacabana-zig-zag-murcia
+Redirect 301	/clases-baile-elche	/clases-baile-murcia
+Redirect 301	/clases-baile-murcia /
+Redirect 301	/musica /
+RedirectMatch 301	/profesores-baile$	/#profesor
+RedirectMatch 301	/contacto$	/#contacto

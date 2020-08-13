@@ -1,0 +1,48 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Clases de Baile 【 Salsa y Bachata 】 en Elche', metaDescription = 'En la Sala Rosa Negra en Elche (Alicante), ofrecemos clases de salsa en línea y bachata ✅ (y otros bailes latinos).', body = 'clases'
+
+block content
+  .principal
+    h1 Clases de Baile Salsa y Bachata en Elche
+    p Clases de baile de Salsa y Bachata y otros bailes latinos en Sala Rosa Regra, Elche (Alicante).
+    ul
+      li
+        span.color Nivel Inicio
+        | : Viernes de 19:00 a 21:00 (2 horas).
+      li
+        span.color Nivel Medio
+        | : Viernes de 21:00 a 23:00 (2 horas).
+    .globos
+      div
+        a.globo.logo-rosa-negra(title='Ampliar Logo Sala Rosa Negra, Elche (Alicante)' href='/img/logo-rosa-negra.png' target='_blank')
+          span Logo
+      div
+        a.globo.exterior-rosa-negra(title='Ampliar Exterior Sala Rosa Negra, Elche (Alicante)' href='/img/exterior-rosa-negra.jpg' target='_blank')
+          span Exterior
+      div
+        a.globo.interior-rosa-negra(title='Ampliar Interior Sala Rosa Negra, Elche (Alicante)' href='/img/interior-rosa-negra.jpg' target='_blank')
+          span Interior
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    include ../includes/clases.pug
+    p.bajo-clases(itemscope itemtype='http://schema.org/LocalBusiness')
+      | También puedes ampliar el 
+      a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Sala Rosa Negra, Elche (Alicante)' itemprop='hasMap' href='https://www.google.es/maps/place/Carrer+Baltasar+Brotons+Garcia,+5,+03203+Elx,+Alicante/@38.26943,-0.677205,17z/data=!3m1!4b1!4m2!3m1!1s0xd63b42a78c48ef3:0x2399d2a5343c5887' rel='nofollow' target='_blank') mapa
+      |  de 
+      strong(itemprop='name') Rosa Negra
+      |  
+      strong(itemprop='description') Sala de Baile
+      | : 
+      span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+        span(itemprop='streetAddress') Calle Baltasar Brotons García, 5
+        |  / 
+        span(itemprop='postalCode') 03203
+        |  
+        span(itemprop='addressLocality') Elche
+        | , 
+        span(itemprop='addressRegion') Alicante
+      | .
+  .capa-anti-eventos(onclick='style.display=\'none\'')
+  iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.434053249941!2d-0.6772049999999998!3d38.26943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b42a78c48ef3%3A0x2399d2a5343c5887!2sCarrer+Baltasar+Brotons+Garcia%2C+5%2C+03203+Elx%2C+Alicante!5e0!3m2!1ses!2ses!4v1441667195570' width='100%' height='350' allowfullscreen)
+  include ../includes/locales.pug

@@ -1,0 +1,205 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Clases de Salsa y Bachata en Murcia 【Bailes Latinos】', metaDescription = 'llll➤ Si buscas clases de salsa, bachata u otros bailes latinos en Murcia… ✅ ¡Este es tu sitio!', body = 'inicio'
+
+block content
+  .principal
+    h1 Clases de Salsa y Bachata en Murcia
+    p
+      | Tenemos un propósito para ti, enseñarte a bailar con la máxima calidad y profesionalidad posible, sin dejar de lado la parte divertida, pero sin olvidar el objetivo principal de las 
+      a(title='Clases de Baile Salsa y Bachata' href='/') clases
+      | : que aprendas a bailar correctamente disfrutando en todo momento. Así que ya sabes, si quieres 
+      strong aprender a bailar salsa y/o bachata
+      |  u otros 
+      strong bailes latinos
+      | , no dudes en 
+      a(title='Contacto' href='/#contacto') contactar con nosotros
+      |  y te informaremos sin ningún tipo de compromiso.
+    video.cabecera-fondo-inicio(width='320' height='180' preload='auto' autoplay loop poster='/img/cabecera-inicio.jpg')
+      source(src='/img/cabecera-video.mp4' type='video/mp4')
+      source(src='/img/cabecera-video-2.webm' type='video/webm')
+      img.cabecera-fondo-inicio(width='1024' height='576' alt='Manu Ruiz Salsa y Bachata' src='/img/cabecera-inicio.jpg')
+    include ../includes/boton-clases.pug
+    a.video-promocion(title='Manu y Gloria Bailando Salsa en Murcia' href='javascript:void(0)' onclick='document.getElementById(\'light\').style.visibility=\'visible\';document.getElementById(\'light\').style.transform=\'none\';document.getElementById(\'fade\').style.visibility=\'visible\';document.getElementById(\'fade\').style.opacity=\'1\'')
+      img(width='1024' height='576' alt='Vídeo promocional de Manu y Gloria bailando Salsa en Murcia' src='/img/cabecera-inicio.jpg')
+    #light.contenedor-video
+      iframe.video-youtube(width='560' height='315' src='https://www.youtube.com/embed/u3yU8veGv3A?rel=0&showinfo=0' allowfullscreen)
+      a.cerrar(title='Cerrar Vídeo' href='javascript:void(0)' onclick='document.getElementById(\'light\').style.visibility=\'hidden\';document.getElementById(\'light\').style.transform=\'perspective(600px) rotateY(-90deg)\';document.getElementById(\'fade\').style.visibility=\'hidden\';document.getElementById(\'fade\').style.opacity=\'0\'') ×
+    #fade.fondo-oscuro
+  .secundario#profesor
+    h1 Profesor de Salsa y Bachata
+    .globos
+      div
+        a.globo.manu(title='Aprender a Bailar Salsa y Bachata' href='/img/manu.jpg' target='_blank')
+          h3 Manuel Ruiz
+      //- div
+        a.globo.gloria(title='Profesores de Bailes Latinos: Manu y Gloria' href='/img/gloria.jpg' target='_blank')
+          h3 Gloria Ortega
+    p
+      | Soy 
+      strong Manu Ruiz
+      | , 
+      strong profesor de baile de salsa y bachata
+      | . El baile ha sido una parte esencial en mi vida ya que bailo desde pequeñito. Cuento con más de 20 años de experiencia como 
+      strong profesor de bailes latinos
+      | , dentro de los cuales enseño salsa en línea (On1 y On2), salsa cubana, bachata, chachacha, pachanga, afrorumba, estilo chico y acrobacias entre otros. Tengo la suerte de dedicarme a lo que me gusta e intento transmitir a mis alumnos mi pasión por el baile. Trabajo día a día para mejorar la calidad de mis clases.
+    //- a(title='Manu y Gloria, Profesores de Baile de Salsa y Bachata' href='/img/profesores-salsa-bachata.jpg' target='_blank')
+      img.profes(alt='Manu y Gloria, profesores de salsa y bachata' src='./img/profesores-salsa-bachata-480x321.jpg' width='480' height='321')
+    p
+      strong Bailar
+      |  es algo que me encanta, que me apasiona, y es una de las cosas en mi vida que más alegría me ha proporcionado; se podría decir que, en muchos aspectos, veo el baile como sinónimo de felicidad. Por ello, tener la oportunidad de transmitir esa felicidad a otros, de enseñar a disfrutar a través del baile, me ilusiona y hace que ame mi trabajo. Me encantaría enseñarte a bailar o, si ya sabes, hacer que mejores y que conozcas otros estilos.
+  .contenedor-resenas
+    .resenas
+      div
+        div
+          cite.jesus Jesús Martínez
+          blockquote Una de las mejores cosas de las clases con Manu es la cercanía que crea contigo y con los compañeros. Las risas, el buen rollo y que cuando vayas a bailar por ahí los demás se sorprendan de lo rápido que se aprende con el.
+        div
+          cite.sofia Sofía Plaza
+          blockquote En sus clases he aprendido muchas cosas respecto al baile, pero, quizá, lo más importante es que me he sentido como en familia. Son muy cercanos y hacen que te sientas muy agusto en clase, aprendas disfrutando y te apasione cada vez más bailar.
+      div
+        div
+          cite.zepo Zepo Sánchez
+          blockquote Manu mola un huevo y parte del otro, ya quisiera ser como el. Yo ya sabía lo que era petarlo en general, pero ellos enseñaron a petarlo más si cabe bailando.
+        div
+          cite.noelia Noelia Ruiz
+          blockquote Mi experiencia con Manu ha sido muy buena. Por una parte, he aprendido técnica de salsa, y por otra, me he divertido muchísimo en sus clases.
+      div
+        div
+          cite.loren Lorenzo Sánchez
+          blockquote Manu lo peta bien petado constantemente, es canelita en rama, ya tu sabe... ¡Jajaja! En serio, he probado unos cuantos profesores y el con diferencia es el que ha sacado lo mejor de mí bailando.
+        div
+          cite.fina Fina López
+          blockquote Clases muy divertidas, rápido aprendizaje, profesionalidad y, sobre todo, humildad, la humanidad, la cercanía y el cariño que Manu transmite a sus alumnos. Grandes compañeros de los que ha salido una bonita amistad.
+      div
+        div
+          cite.antonio Antonio Marín
+          blockquote Las clases de Manu me han ayudado a mejorar la técnica a la hora de realizar marcas. El ambiente en clase es súper agradable, con muy buen rollo entre todos los alumnos. ¡Estoy muy contento con sus clases!
+        div
+          cite.gianella Gianella Mendieta
+          blockquote Como profesor: me encanta, por técnica e innovación y la diferencia entre clases. A nivel personal: le agradezco darme la oportunidad de dejarme estar con el. ¡Simplemente fenomenal!
+      div
+        div
+          cite.gabi Gabi Cutillas
+          blockquote Sin duda, una gran decisión comenzar a bailar, pero sobre todo, hacerlo con Manu, un magnífico profesor con bellísima gente en sus clases detrás de el.
+        div
+          cite.carolina Carolina Aljarín
+          blockquote Manu me han enseñado realmente lo que es bailar y he evolucionado mucho gracias a el. Las clases son muy divertidas y se han convertido, además de profesores, en amigos.
+      div
+        div
+          cite.sam Samuel López
+          blockquote Con Manu he mejorado, no solo en lo que a saber un mayor número de pasos, estilo o técnica se refiere, sino también a tener una mayor capacidad para aprender rápido figuras complejas.
+        div
+          cite.eduyarabia Edu y Arabia
+          blockquote Las clases con Manu se hacen amenas y divertidas, con ellas pasas momentos en muy buena compañía, aprendiendo lo mejor del mundillo salsero para luego gozarlo a full hd en las salas de baile ;)
+  .principal#precios-horarios
+    h2 Precios y Horarios
+    p
+      | ¿Qué aprenderás con nosotros? En nuestras 
+      strong clases de baile
+      |  nos centramos en la 
+      strong salsa y la bachata
+      | , que son los estilos más demandados, incluyendo en ellas ámbitos muy importantes como son estilos chico y chica, técnica de la salsa, movimiento y disociación corporal y musicalidad. También contaremos con otros estilos menos demandados pero no por ello menos importantes como son: chachacha, salsa cubana, salsa On2, pachanga y rumba afro.
+    include ../includes/clases.pug
+  .capa-anti-eventos(onclick='style.display=\'none\'')
+  iframe#ubicaciones(src='https://mapsengine.google.com/map/embed?mid=zinurO2jhe64.keGRDQNXb3sM' width='100%' height='350' allowfullscreen)
+  include ../includes/locales.pug
+  .principal#ventajas
+    h2 Ventajas
+    .globos
+      div
+        a.globo.razones(title='Aprender a Bailar Salsa y Bachata' href='javascript:void(0)' onclick='document.getElementById(\'light-razones\').style.visibility=\'visible\';document.getElementById(\'light-razones\').style.transform=\'none\';document.getElementById(\'fade-razones\').style.visibility=\'visible\';document.getElementById(\'fade-razones\').style.opacity=\'1\'')
+          h3 Razones para dar clases con nosotros
+        p Te enumeramos las principales razones por las cuales dar clases con nosotros.
+        #light-razones.contenedor-video
+          .overflow
+            ul
+              li
+                strong Aprenderás rápido
+                |  y nuestra didáctica de clase favorece mucho el aprendizaje.
+              li Tendrás varios niveles para elegir.
+              li
+                | Nuestras clases incluyen 
+                strong estilo chico/a
+                | .
+              li No es necesario venir en pareja, tenemos las clases equilibradas entre chicos y chicas.
+              li
+                | Tenemos 
+                a(title='Clases de Baile Salsa y Bachata' href='/') clases
+                |  en diferentes puntos de la Región de 
+                strong Murcia
+                |  y 
+                strong Alicante
+                | .
+              li
+                | Damos clases 
+                b todos los días de la semana
+                | , incluso sábados y domingos.
+              li Todas las clases se imparten por una pareja, lo que le da a las clases un valor añadido, pues cada uno indica los detalles correspondientes a su rol.
+            include ../includes/boton-clases.pug
+          a.cerrar(title='Cerrar Vídeo' href='javascript:void(0)' onclick='document.getElementById(\'light-razones\').style.visibility=\'hidden\';document.getElementById(\'light-razones\').style.transform=\'perspective(600px) rotateY(-90deg)\';document.getElementById(\'fade-razones\').style.visibility=\'hidden\';document.getElementById(\'fade-razones\').style.opacity=\'0\'') ×
+        #fade-razones.fondo-oscuro
+      div
+        a.globo.beneficios(title='Profesores de Bailes Latinos: Manu y Gloria' href='javascript:void(0)' onclick='document.getElementById(\'light-beneficios\').style.visibility=\'visible\';document.getElementById(\'light-beneficios\').style.transform=\'none\';document.getElementById(\'fade-beneficios\').style.visibility=\'visible\';document.getElementById(\'fade-beneficios\').style.opacity=\'1\'')
+          h3 Beneficios de Bailar Salsa y Bachata
+        p Beneficios físicos y emocionales que te aportan los bailes latinos.
+        #light-beneficios.contenedor-video
+          .overflow
+            ul
+              li Conoces gente nueva.
+              li Quemas 450 calorías por hora.
+              li Mejora tu postura y equilibrio.
+              li Mejoras la coordinación.
+              li Es un hobby muy económico.
+              li Combate la depresión.
+              li Aumentas la autoestima.
+              li Ejercitas tu memoria.
+              li Acelera el metabolismo tienes más energía.
+              li Desconectas de los problemas.
+              li Serás más feliz.
+            include ../includes/boton-clases.pug
+          a.cerrar(title='Cerrar Vídeo' href='javascript:void(0)' onclick='document.getElementById(\'light-beneficios\').style.visibility=\'hidden\';document.getElementById(\'light-beneficios\').style.transform=\'perspective(600px) rotateY(-90deg)\';document.getElementById(\'fade-beneficios\').style.visibility=\'hidden\';document.getElementById(\'fade-beneficios\').style.opacity=\'0\'') ×
+        #fade-beneficios.fondo-oscuro
+  .principal#contacto
+    h2 Contacto
+    p Ponte en contacto con nosotros y te informaremos de los grupos que tenemos, los niveles, los precios, los horarios y las ubicaciones. ¡Anímate a probar!
+    p
+      | Puedes 
+      b llamarnos
+      |  directamente o escribirnos por 
+      b Whatssap
+      | :
+    .contacto-pagina
+      .social
+        a.telefono.telefono-llamar(title='Llamar por Teléfono' itemprop='telephone' href='tel:+34622161585' target='_blank')
+          <svg class="whatsapp" with="48" height="48" alt="Icono Teléfono" viewBox="0 0 480 480" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M240,30c115.8,0,210,94.2,210,210s-94.2,210-210,210S30,355.8,30,240S124.2,30,240,30 M240,0C107.5,0,0,107.5,0,240 s107.5,240,240,240s240-107.5,240-240S372.5,0,240,0L240,0z M373.8,320.2l-1.3-4.1c-3.2-9.4-13.6-19.3-23.2-21.9l-35.5-9.7 c-9.6-2.6-23.3,0.9-30.4,8l-12.8,12.8c-46.6-12.6-83.2-49.2-95.8-95.9l12.8-12.8c7-7,10.5-20.7,7.9-30.4l-9.7-35.5 c-2.6-9.6-12.5-20-21.9-23.2l-4-1.3c-9.5-3.2-23,0-30,7.1l-19.2,19.2c-3.4,3.4-5.6,13.2-5.6,13.2c-0.6,61,23.3,119.7,66.4,162.9 c43,43,101.5,66.9,162.3,66.4c0.3,0,10.4-2.1,13.8-5.6l19.2-19.2C373.8,343.2,376.9,329.7,373.8,320.2z"/></svg>
+          |  622 161 585
+        a.telefono.telefono-w(title='Enviar Mensaje por WhatsApp' itemprop='telephone' href='https://api.whatsapp.com/send?phone=34622161585' target='_blank')
+          <svg class="whatsapp" with="48" height="48" alt="Icono Whatsapp" viewBox="0 0 560 560" version="1.1" xmlns="http://www.w3.org/2000/svg"><g><path fill="#FFFFFF" d="M477.5,81.4C425.1,29,355.4,0,281.1,0C128.1,0,3.6,124.5,3.6,277.5c0,48.9,12.8,96.7,37,138.7L1.2,560 l147.2-38.6c40.5,22.1,86.2,33.8,132.7,33.8h0.2c153,0,277.5-124.5,277.6-277.5C558.7,203.6,529.9,133.8,477.5,81.4z"/><path fill="#04C208" d="M444.3,114.5c-43.5-43.6-101.5-67.7-163.1-67.7C154,46.9,50.4,150.4,50.3,277.5c0,43.6,12.2,86,35.3,122.8 l5.5,8.7l-23.3,85.1l87.4-22.8l8.4,5c35.4,21,76,32.1,117.4,32.1h0.1c127.1,0,230.6-103.5,230.7-230.6 C511.8,216,487.9,158.1,444.3,114.5z"/><path fill="#FFFFFF" d="M407.7,335.6c-7-3.5-41-20.3-47.4-22.5c-6.3-2.3-11-3.5-15.6,3.5c-4.6,7-17.9,22.5-22,27.2 c-4.1,4.6-8.1,5.2-15,1.7c-7-3.5-29.3-10.8-55.8-34.4c-20.6-18.4-34.5-41.1-38.6-48c-4.1-7-0.5-10.7,3-14.1c3.1-3.1,7-8.1,10.4-12.2 c3.5-4.1,4.6-7,7-11.6c2.3-4.6,1.1-8.7-0.6-12.2c-1.7-3.5-15.6-37.6-21.4-51.5c-5.6-13.5-11.3-11.7-15.6-11.9 c-4-0.2-8.7-0.2-13.3-0.2c-4.6,0-12.2,1.7-18.5,8.7c-6.3,7-24.3,23.7-24.3,57.8s24.9,67.1,28.3,71.7c3.5,4.6,48.9,74.7,118.5,104.7 c16.6,7.2,29.5,11.4,39.5,14.6c16.6,5.3,31.7,4.5,43.7,2.7c13.3-2,41-16.8,46.8-33c5.7-16.2,5.7-30.1,4.1-33 C419.2,340.8,414.6,339,407.7,335.6z"/></g></svg>
+          |  Enviar WhatsApp
+    p
+      | También puedes escribirnos y seguirnos en las página de 
+      b Facebook
+      |  e 
+      b Instagram
+      |  para no perderte ninguna actualización:
+    .contacto-pagina
+      .social
+        a.facebook(title='Página de Facebook de Manu Salsa y Bachata' href='Clases de Baile Salsa y Bachata' target='_blank') Página Facebook
+        a.instagram(title='Página de Instagram de Manu Salsa y Bachata' href='https://www.instagram.com/manuruizlozano/' target='_blank') Página Instagram
+    p
+      | O suscribirte en nuestro canal de 
+      b YouTube
+      | :
+    .social
+      a.youtube(title='Canal de YouTube de Manu Salsa y Bachata' href='https://www.youtube.com/c/ManuyGloriaSalsayBachataMurcia' target='_blank') Canal YouTube
+    p
+      | ¡Y si nos quieres apoyar dejando una reseña en 
+      b Google Maps
+      |  y/o 
+      b Facebook
+      |  te estaremos muy agradecidos!:
+    .social
+      a.google-plus(title='Escribir Reseña en GMaps' href='https://www.google.es/search?q=manuygloriasalsaybachata.es#lrd=0xd63818bc1a3bcaf:0xf757c353d296f463,1,,,' target='_blank') Reseña en GMaps
+      a.facebook(title='Escribir Reseña en Facebook' href='https://www.facebook.com/pg/Manu-Ruiz-Salsa-y-Bachata-253758795200058/reviews/' target='_blank') Reseña en Facebook

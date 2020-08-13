@@ -1,0 +1,29 @@
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width, initial-scale=1.0')
+block metas
+  if title
+    title= title
+    meta(property='og:title' content=title)
+  else
+    title= 'Diamond Dance'
+  if metaDescription
+    meta(name='description' property='og:description' content=metaDescription)
+  if noindex
+    meta(name='robots' content='noindex')
+meta(property='og:locale' content='es_ES')
+meta(property='og:type' content='website')
+meta(property='og:url' content='clasessalsaybachata.es')
+meta(property='og:site_name' content='Manu Salsa y Bachata')
+meta(property='article:publisher' content='https://www.facebook.com/Manu-Ruiz-Salsa-y-Bachata-253758795200058/')
+link(rel='shortcut icon' type='image/x-icon' sizes='16x16' href='/favicon.ico')
+link(rel='icon' type='image/png' sizes='32x32' href='/favicon.png')
+link(rel='stylesheet' href='css/styles.css' type='text/css')
+meta(name='google-site-verification' content='p-o7ustzGqQ0NMSTNy9C7W-VMXxjoSwwqFKzxlfuMxk')
+script(async src='https://www.googletagmanager.com/gtag/js?id=UA-2157126-8')
+script.
+  window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'UA-2157126-8')
