@@ -43,10 +43,10 @@ Redirect 301	/talleres-baile	/
 Redirect 301	/manuygloriasalsabachata.es	/
 Redirect 301	/mobile/	/
 Redirect 301	/cursos-intensivos-baile	/
-Redirect 301	/clases-baile	/clases-baile-murcia
+Redirect 301	/clases-baile	/
 Redirect 301	/clases-baile-centro-zig-zag-murcia	/clases-baile-copacabana-zig-zag-murcia
 Redirect 301	/clases-baile-copacabanas-zig-zag-murcia	/clases-baile-copacabana-zig-zag-murcia
-Redirect 301	/clases-baile-elche	/clases-baile-murcia
+Redirect 301	/clases-baile-elche	/
 Redirect 301	/clases-baile-murcia /
 Redirect 301	/musica /
 RedirectMatch 301	/profesores-baile$	/#profesor
