@@ -1,5 +1,11 @@
 extends ../template/layout.pug
 
+block jekyll
+  | ---
+  | redirect_from: "/musica"
+  | ---
+  |
+
 block var
   - const title= '🥇 Clases de Salsa y Bachata en Murcia 【Bailes Latinos】', metaDescription = 'llll➤ Si buscas clases de salsa, bachata u otros bailes latinos en Murcia… ✅ ¡Este es tu sitio!', body = 'inicio'
 
@@ -53,45 +59,69 @@ block content
     .resenas
       div
         div(data-showup)
-          cite.jesus(data-style='background-image: url(../img/cite.jpg);') Jesús Martínez
+          cite.jesus
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Jesús Martínez
           blockquote Una de las mejores cosas de las clases con Manu es la cercanía que crea contigo y con los compañeros. Las risas, el buen rollo y que cuando vayas a bailar por ahí los demás se sorprendan de lo rápido que se aprende con el.
         div(data-showup)
-          cite.sofia(data-style='background-image: url(../img/cite.jpg);') Sofía Plaza
+          cite.sofia
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Sofía Plaza
           blockquote En sus clases he aprendido muchas cosas respecto al baile, pero, quizá, lo más importante es que me he sentido como en familia. Son muy cercanos y hacen que te sientas muy agusto en clase, aprendas disfrutando y te apasione cada vez más bailar.
       div
         div(data-showup)
-          cite.zepo(data-style='background-image: url(../img/cite.jpg);') Zepo Sánchez
+          cite.zepo
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Zepo Sánchez
           blockquote Manu mola un huevo y parte del otro, ya quisiera ser como el. Yo ya sabía lo que era petarlo en general, pero ellos enseñaron a petarlo más si cabe bailando.
         div(data-showup)
-          cite.noelia(data-style='background-image: url(../img/cite.jpg);') Noelia Ruiz
+          cite.noelia
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Noelia Ruiz
           blockquote Mi experiencia con Manu ha sido muy buena. Por una parte, he aprendido técnica de salsa, y por otra, me he divertido muchísimo en sus clases.
       div
         div(data-showup)
-          cite.loren(data-style='background-image: url(../img/cite.jpg);') Lorenzo Sánchez
+          cite.loren
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Lorenzo Sánchez
           blockquote Manu lo peta bien petado constantemente, es canelita en rama, ya tu sabe... ¡Jajaja! En serio, he probado unos cuantos profesores y el con diferencia es el que ha sacado lo mejor de mí bailando.
         div(data-showup)
-          cite.fina(data-style='background-image: url(../img/cite.jpg);') Fina López
+          cite.fina
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Fina López
           blockquote Clases muy divertidas, rápido aprendizaje, profesionalidad y, sobre todo, humildad, la humanidad, la cercanía y el cariño que Manu transmite a sus alumnos. Grandes compañeros de los que ha salido una bonita amistad.
       div
         div(data-showup)
-          cite.antonio(data-style='background-image: url(../img/cite.jpg);') Antonio Marín
+          cite.antonio
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Antonio Marín
           blockquote Las clases de Manu me han ayudado a mejorar la técnica a la hora de realizar marcas. El ambiente en clase es súper agradable, con muy buen rollo entre todos los alumnos. ¡Estoy muy contento con sus clases!
         div(data-showup)
-          cite.gianella(data-style='background-image: url(../img/cite.jpg);') Gianella Mendieta
+          cite.gianella
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Gianella Mendieta
           blockquote Como profesor: me encanta, por técnica e innovación y la diferencia entre clases. A nivel personal: le agradezco darme la oportunidad de dejarme estar con el. ¡Simplemente fenomenal!
       div
         div(data-showup)
-          cite.gabi(data-style='background-image: url(../img/cite.jpg);') Gabi Cutillas
+          cite.gabi
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Gabi Cutillas
           blockquote Sin duda, una gran decisión comenzar a bailar, pero sobre todo, hacerlo con Manu, un magnífico profesor con bellísima gente en sus clases detrás de el.
         div(data-showup)
-          cite.carolina(data-style='background-image: url(../img/cite.jpg);') Carolina Aljarín
+          cite.carolina
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Carolina Aljarín
           blockquote Manu me han enseñado realmente lo que es bailar y he evolucionado mucho gracias a el. Las clases son muy divertidas y se han convertido, además de profesores, en amigos.
       div
         div(data-showup)
-          cite.sam(data-style='background-image: url(../img/cite.jpg);') Samuel López
+          cite.sam
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Samuel López
           blockquote Con Manu he mejorado, no solo en lo que a saber un mayor número de pasos, estilo o técnica se refiere, sino también a tener una mayor capacidad para aprender rápido figuras complejas.
         div(data-showup)
-          cite.eduyarabia(data-style='background-image: url(../img/cite.jpg);') Edu y Arabia
+          cite.eduyarabia
+            span(data-style='background-image: url(../img/cite.jpg);')
+            | Edu y Arabia
           blockquote Las clases con Manu se hacen amenas y divertidas, con ellas pasas momentos en muy buena compañía, aprendiendo lo mejor del mundillo salsero para luego gozarlo a full hd en las salas de baile ;)
   .principal#precios-horarios
     h2(data-showup) Precios y Horarios

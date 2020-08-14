@@ -1014,7 +1014,7 @@ cite {
   text-shadow: 0 2px 0 #000;
   font-weight: bold;
 }
-cite:before {
+cite span {
   content: '';
   position: absolute;
   width: 100px;
@@ -1026,41 +1026,42 @@ cite:before {
   border: 5px solid;
   border-radius: 50%;
   box-shadow: inset 0 5px 10px #000;
+  background-image: url(../img/cite.jpg);
 }
-.jesus:before {
+.jesus span {
   background-position: 0 0;
 }
-.sofia:before {
+.sofia span {
   background-position: 0 -100px;
 }
-.zepo:before {
+.zepo span {
   background-position: 0 -200px;
 }
-.noelia:before {
+.noelia span {
   background-position: 0 -300px;
 }
-.loren:before {
+.loren span {
   background-position: 0 -400px;
 }
-.fina:before {
+.fina span {
   background-position: 0 -500px;
 }
-.antonio:before {
+.antonio span {
   background-position: 0 -600px;
 }
-.gianella:before {
+.gianella span {
   background-position: 0 -700px;
 }
-.gabi:before {
+.gabi span {
   background-position: 0 -800px;
 }
-.carolina:before {
+.carolina span {
   background-position: 0 -900px;
 }
-.sam:before {
+.sam span {
   background-position: 0 -1000px;
 }
-.eduyarabia:before {
+.eduyarabia span {
   background-position: 0 -1100px;
 }
 blockquote {
