@@ -6,8 +6,8 @@ block var
 block content
   .principal
     h1 Clases de Baile de Salsa y Bachata en Molina de Segura
-    p Clases de Baile de Salsa y Bachata en Centro Social San José de Molina de Segura, Murcia.
-    ul
+    p(data-showup) Clases de Baile de Salsa y Bachata en Centro Social San José de Molina de Segura, Murcia.
+    ul(data-showup)
       li
         span.color Nivel Inicio 0
         | : Domingos de 19:00 a 20:30 (1,5 horas).
@@ -15,13 +15,15 @@ block content
         span.color Nivel Medio
         | : Domingos de 20:30 a 22:30 (2 horas).
     .globos
-      div: a.globo.logo-cssj(title='Ampliar Logo Centro Social San José de Molina de Segura, Murcia' href='/img/logo-cssj.png' target='_blank')
+      div(data-showup)
+        a.globo.logo-cssj(title='Ampliar Logo Centro Social San José de Molina de Segura, Murcia' href='/img/logo-cssj.png' target='_blank' data-style='background-image: url(../img/cssj.png);')
           span "Logo"
-      div: a.globo.exterior-cssj(title='Ampliar Exterior Centro Social San José de Molina de Segura, Murcia' href='/img/exterior-cssj.jpg' target='_blank')
+      div(data-showup)
+        a.globo.exterior-cssj(title='Ampliar Exterior Centro Social San José de Molina de Segura, Murcia' href='/img/exterior-cssj.jpg' target='_blank' data-style='background-image: url(../img/cssj.png);')
           span Exterior
-    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' data-src='/img/cabecera-clases.jpg')
     include ../includes/clases.pug
-    p(itemscope itemtype='http://schema.org/LocalBusiness')
+    p(itemscope itemtype='http://schema.org/LocalBusiness' data-showup)
       | También puedes ampliar el 
       a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Centro Social San José de Molina de Segura, Murcia' itemprop='hasMap' href='https://www.google.com/maps?ll=38.066013,-1.204099&z=18&t=m&hl=es-ES&gl=ES&mapclient=embed&q=Calle+Palaz%C3%B3n,+14+30500+Molina+de+Segura+Murcia' rel='nofollow' target='_blank') mapa
       |  de 

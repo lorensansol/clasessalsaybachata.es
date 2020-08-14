@@ -6,8 +6,8 @@ block var
 block content
   .principal
     h1 Clases de Baile Salsa y Bachata en Elche
-    p Clases de baile de Salsa y Bachata y otros bailes latinos en Sala Rosa Regra, Elche (Alicante).
-    ul
+    p(data-showup) Clases de baile de Salsa y Bachata y otros bailes latinos en Sala Rosa Regra, Elche (Alicante).
+    ul(data-showup)
       li
         span.color Nivel Inicio
         | : Viernes de 19:00 a 21:00 (2 horas).
@@ -15,18 +15,18 @@ block content
         span.color Nivel Medio
         | : Viernes de 21:00 a 23:00 (2 horas).
     .globos
-      div
-        a.globo.logo-rosa-negra(title='Ampliar Logo Sala Rosa Negra, Elche (Alicante)' href='/img/logo-rosa-negra.png' target='_blank')
+      div(data-showup)
+        a.globo.logo-rosa-negra(title='Ampliar Logo Sala Rosa Negra, Elche (Alicante)' href='/img/logo-rosa-negra.png' target='_blank' data-style='background-image: url(../img/rosa-negra.png);')
           span Logo
-      div
-        a.globo.exterior-rosa-negra(title='Ampliar Exterior Sala Rosa Negra, Elche (Alicante)' href='/img/exterior-rosa-negra.jpg' target='_blank')
+      div(data-showup)
+        a.globo.exterior-rosa-negra(title='Ampliar Exterior Sala Rosa Negra, Elche (Alicante)' href='/img/exterior-rosa-negra.jpg' target='_blank' data-style='background-image: url(../img/rosa-negra.png);')
           span Exterior
-      div
-        a.globo.interior-rosa-negra(title='Ampliar Interior Sala Rosa Negra, Elche (Alicante)' href='/img/interior-rosa-negra.jpg' target='_blank')
+      div(data-showup)
+        a.globo.interior-rosa-negra(title='Ampliar Interior Sala Rosa Negra, Elche (Alicante)' href='/img/interior-rosa-negra.jpg' target='_blank' data-style='background-image: url(../img/rosa-negra.png);')
           span Interior
-    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' data-src='/img/cabecera-clases.jpg')
     include ../includes/clases.pug
-    p.bajo-clases(itemscope itemtype='http://schema.org/LocalBusiness')
+    p.bajo-clases(itemscope itemtype='http://schema.org/LocalBusiness' data-showup)
       | También puedes ampliar el 
       a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Sala Rosa Negra, Elche (Alicante)' itemprop='hasMap' href='https://www.google.es/maps/place/Carrer+Baltasar+Brotons+Garcia,+5,+03203+Elx,+Alicante/@38.26943,-0.677205,17z/data=!3m1!4b1!4m2!3m1!1s0xd63b42a78c48ef3:0x2399d2a5343c5887' rel='nofollow' target='_blank') mapa
       |  de 

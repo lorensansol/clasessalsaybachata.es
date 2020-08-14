@@ -509,8 +509,9 @@ img:hover {
   transform: scale(1.1);
   box-shadow: 0 2px 5px #000;
 }
-.principal ul {
-  // margin: 7.5% 7.5% 0;
+.principal .razones ul,
+.principal .beneficios ul {
+  margin: 7.5% 7.5% 0;
   text-align: left;
 }
 /*SECUNDARIO*/
@@ -805,7 +806,8 @@ img:hover {
 .contenedor-resenas {
   overflow: hidden;
   text-align: center;
-  background: url(../img/grupo.jpg) no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
   /*background-attachment:fixed;*/
   background-size: cover;
   box-shadow: inset 0 5px 10px #000;
@@ -1021,7 +1023,6 @@ cite:before {
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-image: url(../img/cite.jpg);
   border: 5px solid;
   border-radius: 50%;
   box-shadow: inset 0 5px 10px #000;
@@ -1080,7 +1081,6 @@ blockquote:after {
 }
 .razones,
 .beneficios {
-  background-image: url(../img/razones-beneficios.jpg);
   background-size: cover;
 }
 .razones {
@@ -1126,7 +1126,6 @@ blockquote:after {
 /*PROFESORES*/
 .manu,
 .gloria {
-  background-image: url(../img/manu-gloria-200x300.jpg);
   background-size: cover;
 }
 .manu {
@@ -1211,7 +1210,6 @@ iframe {
 .cssj,
 .rosa-negra,
 .intensivos {
-  background-image: url(../img/locales.png);
   background-size: cover;
 }
 .aerodance {
@@ -1282,7 +1280,6 @@ iframe {
 .logo-aerodance,
 .exterior-aerodance,
 .interior-aerodance {
-  background-image: url(../img/aerodance.png);
   background-size: cover;
 }
 .logo-aerodance {
@@ -1298,7 +1295,6 @@ iframe {
 .logo-copacabana,
 .exterior-copacabana,
 .interior-copacabana {
-  background-image: url(../img/copacabana.png);
   background-size: cover;
 }
 .logo-copacabana {
@@ -1314,7 +1310,6 @@ iframe {
 .logo-tropical,
 .exterior-tropical,
 .interior-tropical {
-  background-image: url(../img/tropical.png);
   background-size: cover;
 }
 .logo-tropical {
@@ -1330,7 +1325,6 @@ iframe {
 .logo-cssj,
 .exterior-cssj,
 .interior-cssj {
-  background-image: url(../img/cssj.png);
   background-size: cover;
 }
 .logo-cssj {
@@ -1343,7 +1337,6 @@ iframe {
 .logo-panoramic,
 .exterior-panoramic,
 .interior-panoramic {
-  background-image: url(../img/panoramic.png);
   background-size: cover;
 }
 .logo-panoramic {
@@ -1359,7 +1352,6 @@ iframe {
 .logo-rosa-negra,
 .exterior-rosa-negra,
 .interior-rosa-negra {
-  background-image: url(../img/rosa-negra.png);
   background-size: cover;
 }
 .logo-rosa-negra {
@@ -1377,7 +1369,6 @@ iframe {
 .contacto-inicio,
 .contacto-profesores,
 .contacto-clases {
-  background-image: url(../img/cabeceras-mini.jpg);
   background-size: cover;
 }
 .contacto-inicio {

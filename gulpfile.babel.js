@@ -58,10 +58,10 @@ gulp.task('css', () => {
 
 const filesJs = [
   'src/js/scroll-behavior-smooth.js',
-  // 'src/js/scroll-shot.js',
-  // 'src/js/scroll-show.js',
-  // 'src/js/lazy-load.js',
-  // 'src/js/custom.js',
+  'src/js/scroll-shot.js',
+  'src/js/scroll-show.js',
+  'src/js/lazy-load.js',
+  'src/js/custom.js',
 ]
 
 gulp.task('js', () => {

@@ -6,8 +6,8 @@ block var
 block content
   .principal
     h1 Clases de Baile Salsa y Bachata en Lorquí
-    p Clases de baile de Salsa y Bachata y otros bailes latinos en Cafetería Tropical, Lorquí (Murcia).
-    ul
+    p(data-showup) Clases de baile de Salsa y Bachata y otros bailes latinos en Cafetería Tropical, Lorquí (Murcia).
+    ul(data-showup)
       li
         span.color Salsa Nivel Inicio 2
         | : Jueves de 21:00 a 22:00 (1 hora + 1 hora de Bachata Nivel Medio = 2 horas).
@@ -18,18 +18,18 @@ block content
         span.color Salsa Nivel Medio
         | : Jueves de 23:00 a 00:00 (1 hora + 1 hora de Bachata Nivel Medio = 2 horas).
     .globos
-      div
-        a.globo.logo-tropical(title='Ampliar Logo Cafetería Tropical, Lorquí (Murcia)' href='/img/logo-tropical.jpg' target='_blank')
+      div(data-showup)
+        a.globo.logo-tropical(title='Ampliar Logo Cafetería Tropical, Lorquí (Murcia)' href='/img/logo-tropical.jpg' target='_blank' data-style='background-image: url(../img/tropical.png);')
           span Logo
-      div
-        a.globo.exterior-tropical(title='Ampliar Exterior Cafetería Tropical, Lorquí (Murcia)' href='/img/exterior-tropical.jpg' target='_blank')
+      div(data-showup)
+        a.globo.exterior-tropical(title='Ampliar Exterior Cafetería Tropical, Lorquí (Murcia)' href='/img/exterior-tropical.jpg' target='_blank' data-style='background-image: url(../img/tropical.png);')
           span Exterior
-      div
-        a.globo.interior-tropical(title='Ampliar Interior Cafetería Tropical, Lorquí (Murcia)' href='/img/interior-tropical.jpg' target='_blank')
+      div(data-showup)
+        a.globo.interior-tropical(title='Ampliar Interior Cafetería Tropical, Lorquí (Murcia)' href='/img/interior-tropical.jpg' target='_blank' data-style='background-image: url(../img/tropical.png);')
           span Interior
-    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' src='/img/cabecera-clases.jpg')
+    img.cabecera-fondo(width='1024' height='576' alt='Manu Ruiz dando Clases de Baile de Salsa y Bachata' data-src='/img/cabecera-clases.jpg')
     include ../includes/clases.pug
-    p(itemscope itemtype='http://schema.org/LocalBusiness')
+    p(itemscope itemtype='http://schema.org/LocalBusiness' data-showup)
       | También puedes ampliar el 
       a(title='Ampliar Mapa de Clases de Baile Salsa y Bachata en Cafetería Tropical, Lorquí (Murcia)' itemprop='hasMap' href='https://www.google.es/maps/place/Calle+de+la+Ace%C3%B1a,+1,+30564+Lorqu%C3%AD,+Murcia/@38.0809404,-1.2535282,19z/data=!3m1!4b1!4m7!1m4!3m3!1s0xd64791eefbbcf11:0x8932f74eed8de7ab!2sCalle+de+la+Ace%C3%B1a,+2,+30564+Lorqu%C3%AD,+Murcia!3b1!3m1!1s0xd64791efa9f973b:0x68921b9b243b0eb1' rel='nofollow' target='_blank') mapa
       |  de 
